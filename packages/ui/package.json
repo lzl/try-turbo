@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint *.ts*",
-    "build": "tsup ./index.tsx --format cjs --dts"
+    "build": "tsup ./index.tsx --format cjs --dts",
+    "dev": "npm run build --watch"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
