@@ -7,7 +7,7 @@
   "scripts": {
     "lint": "eslint *.ts*",
     "build": "npm run buildJs && npm run buildCss",
-    "buildJs": "tsup src/index.tsx --format cjs --dts",
+    "buildJs": "tsup src/index.tsx --format esm,cjs --dts",
     "buildCss": "pnpx tailwindcss -i ./src/index.css -o ./dist/index.css"
   },
   "devDependencies": {
